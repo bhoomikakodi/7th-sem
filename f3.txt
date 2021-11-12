@@ -1,0 +1,153 @@
+ISE2019@DESKTOP-8LI9K19 MINGW64 /c/7sem
+$ git init
+Initialized empty Git repository in C:/7sem/.git/
+
+ISE2019@DESKTOP-8LI9K19 MINGW64 /c/7sem (master)
+$ git remote add origin "https://github.com/bhoomikakodi/7th-sem.git"
+
+ISE2019@DESKTOP-8LI9K19 MINGW64 /c/7sem (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        f1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ISE2019@DESKTOP-8LI9K19 MINGW64 /c/7sem (master)
+$ git add f1.txt
+
+ISE2019@DESKTOP-8LI9K19 MINGW64 /c/7sem (master)
+$ git commit -m "first commit"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'ISE2019@DESKTOP-8LI9K19.(none)')
+
+ISE2019@DESKTOP-8LI9K19 MINGW64 /c/7sem (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   f1.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   f1.txt
+
+
+ISE2019@DESKTOP-8LI9K19 MINGW64 /c/7sem (master)
+$ ^C
+
+ISE2019@DESKTOP-8LI9K19 MINGW64 /c/7sem (master)
+$ git config --global user.email "bhoomikakodi2000@gmail.com"
+
+ISE2019@DESKTOP-8LI9K19 MINGW64 /c/7sem (master)
+$ git config --global user.name "bhoomikakodi"
+
+ISE2019@DESKTOP-8LI9K19 MINGW64 /c/7sem (master)
+$ git add f1.txt
+
+ISE2019@DESKTOP-8LI9K19 MINGW64 /c/7sem (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   f1.txt
+
+
+ISE2019@DESKTOP-8LI9K19 MINGW64 /c/7sem (master)
+$ git commit -m "bhoomikakg"
+[master (root-commit) c5349c5] bhoomikakg
+ 1 file changed, 1 insertion(+)
+ create mode 100644 f1.txt
+
+ISE2019@DESKTOP-8LI9K19 MINGW64 /c/7sem (master)
+$ git log
+commit c5349c596b587b86dfa4e2decfbb3154b6179767 (HEAD -> master)
+Author: bhoomikakodi <bhoomikakodi2000@gmail.com>
+Date:   Fri Nov 12 16:04:06 2021 +0530
+
+    bhoomikakg
+
+ISE2019@DESKTOP-8LI9K19 MINGW64 /c/7sem (master)
+$ git add .
+
+ISE2019@DESKTOP-8LI9K19 MINGW64 /c/7sem (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   f2.txt.txt
+        new file:   f3.txt.txt
+
+
+ISE2019@DESKTOP-8LI9K19 MINGW64 /c/7sem (master)
+$ ls
+f1.txt  f2.txt.txt  f3.txt.txt
+
+ISE2019@DESKTOP-8LI9K19 MINGW64 /c/7sem (master)
+$ git commit -m -a
+[master 9d4f598] -a
+ 2 files changed, 2 insertions(+)
+ create mode 100644 f2.txt.txt
+ create mode 100644 f3.txt.txt
+
+ISE2019@DESKTOP-8LI9K19 MINGW64 /c/7sem (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    f3.txt.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        f3.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ISE2019@DESKTOP-8LI9K19 MINGW64 /c/7sem (master)
+$ git add .
+
+ISE2019@DESKTOP-8LI9K19 MINGW64 /c/7sem (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   f3.txt
+        deleted:    f3.txt.txt
+
+
+ISE2019@DESKTOP-8LI9K19 MINGW64 /c/7sem (master)
+$ git pull origin main
+warning: no common commits
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/bhoomikakodi/7th-sem
+ * branch            main       -> FETCH_HEAD
+ * [new branch]      main       -> origin/main
+fatal: refusing to merge unrelated histories
+
+ISE2019@DESKTOP-8LI9K19 MINGW64 /c/7sem (master)
+$
